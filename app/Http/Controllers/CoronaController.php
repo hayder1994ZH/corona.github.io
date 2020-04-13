@@ -34,7 +34,7 @@ class CoronaController extends Controller
             echo "cURL Error #:" . $err;
         } else {
             $responses =  json_decode($response) ;
-         return view('welcome',compact('responses'));
+         return view('index',compact('responses'));
         }
 
     }
